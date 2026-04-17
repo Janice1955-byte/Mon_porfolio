@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio – Janice ADJAKIDJE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="header">
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="#accueil" class="nav__logo">JBA<span>~</span></a>
+      <button class="nav__toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" role="list">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== SECTION ACCUEIL ===== -->
+    <section id="accueil" class="hero">
+      <div class="hero__bg-grid" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="hero__eyebrow">Bonjour, je suis</p>
+          <h1 class="hero__name">Janice ADAJAKIDJE<span class="dot">~</span></h1>
+          <p class="hero__role">Etudiante en première année de Bachelor en Digitalisation et Sciences de données</p>
+          <p class="hero__desc">
+            Je suis une passionnée de technologies, spécialisée à la fois en développement web et en data science.
+            J’allie mes compétences en programmation à l’analyse de données pour concevoir des solutions intelligentes et orientées résultats.
+            Je développe des interfaces web modernes tout en exploitant les données pour générer des insights pertinents.
+            Curieuse et rigoureuse, j’aime transformer des problématiques complexes en applications concrètes et efficaces.
+            Actuellement en quête d’opportunités, je souhaite contribuer à des projets innovants à l’intersection du développement et de la data.
+          </p>
+          <div class="hero__actions">
+            <a href="#projets" class="btn btn--primary">Voir mes projets</a>
+            <a href="#contact" class="btn btn--outline">Me contacter</a>
+          </div>
+        </div>
+        <div class="hero__photo-wrap">
+          <div class="hero__photo-ring" aria-hidden="true"></div>
+          <img
+            src="img/profil.png"
+            alt="Photo de profil de Janice ADAJAKIDJE, étudiante en Digitalisation et Sciences de données"
+            class="hero__photo"
+          />
+        </div>
+      </div>
+      <div class="hero__scroll-hint" aria-hidden="true">
+        <span>Défiler</span>
+        <i class="fa-solid fa-arrow-down"></i>
+      </div>
+    </section>
+
+    <!-- ===== SECTION COMPÉTENCES ===== -->
+    <section id="competences" class="competences">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Ce que je maîtrise</span>
+          <h2 class="section-title">Compétences</h2>
+        </div>
+        <div class="skills-grid">
+
+          <article class="skill-card">
+            <div class="skill-card__icon" aria-hidden="true">
+              <i class="fa-brands fa-html5"></i>
+            </div>
+            <h3>HTML5</h3>
+            <p>Structuration sémantique, accessibilité, formulaires avancés, validation W3C.</p>
+            <div class="skill-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="Niveau HTML5 : 90%">
+              <div class="skill-bar__fill" style="--level: 90%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-card__icon" aria-hidden="true">
+              <i class="fa-brands fa-css3-alt"></i>
+            </div>
+            <h3>CSS3 / Responsive</h3>
+            <p>Flexbox, Grid, Media Queries, animations, approche Mobile-First.</p>
+            <div class="skill-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="Niveau CSS3 : 85%">
+              <div class="skill-bar__fill" style="--level: 85%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-card__icon" aria-hidden="true">
+              <i class="fa-brands fa-js"></i>
+            </div>
+            <h3>JavaScript</h3>
+            <p>DOM manipulation, événements, ES6+, fetch API, logique client.</p>
+            <div class="skill-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="Niveau JavaScript : 75%">
+              <div class="skill-bar__fill" style="--level: 75%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-card__icon" aria-hidden="true">
+              <i class="fa-brands fa-git-alt"></i>
+            </div>
+            <h3>Git / GitHub</h3>
+            <p>Versionnage, branches, pull requests, collaboration en équipe.</p>
+            <div class="skill-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="Niveau Git : 70%">
+              <div class="skill-bar__fill" style="--level: 70%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-card__icon" aria-hidden="true">
+              <i class="fa-brands fa-figma"></i>
+            </div>
+            <h3>Figma</h3>
+            <p>Maquettage UI, prototypage interactif, design system de base.</p>
+            <div class="skill-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" aria-label="Niveau Figma : 65%">
+              <div class="skill-bar__fill" style="--level: 65%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-card__icon" aria-hidden="true">
+              <i class="fa-brands fa-react"></i>
+            </div>
+            <h3>React</h3>
+            <p>Composants fonctionnels, hooks, gestion d'état, JSX.</p>
+            <div class="skill-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" aria-label="Niveau React : 60%">
+              <div class="skill-bar__fill" style="--level: 60%"></div>
+            </div>
+          </article>
+
+          <article class="skill-card">
+           <div class="skill-card__icon" aria-hidden="true">
+             <i class="fa-brands fa-python"></i>
+           </div>
+            <h3>Python</h3>
+            <p>Analyse de données, scripts automatisés, pandas, numpy, bases du machine learning.</p>
+            <div class="skill-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="Niveau Python : 75%">
+             <div class="skill-bar__fill" style="--level: 75%"></div>
+           </div>
+          </article>
+
+          <article class="skill-card">
+           <div class="skill-card__icon" aria-hidden="true">
+             <i class="fa-solid fa-database"></i>
+           </div>
+            <h3>SQL</h3>
+            <p>Requêtes complexes, jointures, agrégations, modélisation de bases de données.</p>
+            <div class="skill-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="Niveau SQL : 70%">
+             <div class="skill-bar__fill" style="--level: 70%"></div>
+           </div>
+          </article>
+
+          <article class="skill-card">
+           <div class="skill-card__icon" aria-hidden="true">
+             <i class="fa-solid fa-server"></i>
+           </div>
+            <h3>NoSQL</h3>
+            <p>Manipulation de données non structurées, MongoDB, modèles orientés documents.</p>
+            <div class="skill-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" aria-label="Niveau NoSQL : 65%">
+             <div class="skill-bar__fill" style="--level: 65%"></div>
+           </div>
+          </article>
+
+          <article class="skill-card">
+           <div class="skill-card__icon" aria-hidden="true">
+             <i class="fa-solid fa-chart-line"></i>
+           </div>
+            <h3>Data Visualisation (R)</h3>
+            <p>Création de graphiques avec ggplot2, analyse exploratoire et interprétation des données.</p>
+            <div class="skill-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" aria-label="Niveau R : 65%">
+              <div class="skill-bar__fill" style="--level: 65%"></div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION PROJETS ===== -->
+    <section id="projets" class="projets">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Ce que j'ai réalisé</span>
+          <h2 class="section-title">Projets</h2>
+        </div>
+        <div class="projects-grid">
+
+          <article class="project-card">
+            <div class="project-card__image-wrap">
+              <img
+                src="img/tableau-meteo.png"
+                alt="Capture d'écran de l'application météo interactive"
+                class="project-card__image"
+              />
+              <div class="project-card__overlay" aria-hidden="true">
+                <a href="#" class="project-card__link-icon" aria-label="Voir le projet météo en ligne">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JS</span>
+              </div>
+              <h3 class="project-card__title">App Météo Interactive</h3>
+              <p class="project-card__desc">
+                Application web qui affiche la météo en temps réel d'une ville grâce à l'API OpenWeatherMap.
+                Géolocalisation automatique et mode sombre inclus.
+              </p>
+              <a href="#" class="project-card__cta">Voir le projet <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__image-wrap">
+              <img
+                src="img/interface-dapplication-ge.png"
+                alt="Capture d'écran du gestionnaire de tâches To-Do List"
+                class="project-card__image"
+              />
+              <div class="project-card__overlay" aria-hidden="true">
+                <a href="#" class="project-card__link-icon" aria-label="Voir le projet To-Do List en ligne">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">LocalStorage</span>
+              </div>
+              <h3 class="project-card__title">Gestionnaire de Tâches</h3>
+              <p class="project-card__desc">
+                To-do list avec filtrage par statut, drag-and-drop pour réorganiser les tâches
+                et persistance des données via LocalStorage.
+              </p>
+              <a href="#" class="project-card__cta">Voir le projet <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__image-wrap">
+              <img
+                src="img/site-vitrine_boulangerie.png"
+                alt="Capture d'écran du site vitrine pour une boulangerie artisanale"
+                class="project-card__image"
+              />
+              <div class="project-card__overlay" aria-hidden="true">
+                <a href="#" class="project-card__link-icon" aria-label="Voir le projet boulangerie en ligne">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS Grid</span>
+                <span class="tag">Responsive</span>
+              </div>
+              <h3 class="project-card__title">Site Vitrine – Boulangerie</h3>
+              <p class="project-card__desc">
+                Site one-page responsive pour une boulangerie locale. Galerie de produits,
+                carte interactive et formulaire de réservation intégré.
+              </p>
+              <a href="#" class="project-card__cta">Voir le projet <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__image-wrap">
+              <img
+                src="img/site-ecommerce.jpeg"
+                alt="Capture d'écran du site de e-commerce"
+                class="project-card__image"
+              />
+              <div class="project-card__overlay" aria-hidden="true">
+                <a href="#" class="project-card__link-icon" aria-label="Voir le projet Site de E-commerce en ligne">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JS</span>
+              </div>
+              <h3 class="project-card__title">Site de E-commerce</h3>
+              <p class="project-card__desc">
+                Site de e-commerce complet avec gestion des produits, panier et processus de paiement.
+              </p>
+              <a href="#" class="project-card__cta">Voir le projet <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION CONTACT ===== -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Restons en lien</span>
+          <h2 class="section-title">Contact</h2>
+        </div>
+
+        <!-- Réseaux sociaux -->
+        <div class="socials-block">
+          <p class="socials-block__intro">Retrouvez-moi sur mes réseaux professionnels</p>
+          <ul class="socials-list" role="list">
+            <li>
+              <a href="https://www.linkedin.com/in/janice-adjakidje-8717a0390/" class="social-item social-item--linkedin" target="_blank" rel="noopener noreferrer" aria-label="Profil LinkedIn de Jean Dupont">
+                <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                <span>LinkedIn</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/Janice1955-byte" class="social-item social-item--github" target="_blank" rel="noopener noreferrer" aria-label="Profil GitHub de Jean Dupont">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                <span>GitHub</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/Janice002121096" class="social-item social-item--x" target="_blank" rel="noopener noreferrer" aria-label="Profil X (Twitter) de Jean Dupont">
+                <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+                <span>X / Twitter</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/" class="social-item social-item--instagram" target="_blank" rel="noopener noreferrer" aria-label="Profil Instagram de Jean Dupont">
+                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                <span>Instagram</span>
+              </a>
+            </li>
+            <li> 
+              <a href="https://wa.me/2290141611370" class="social-item social-item--whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Contacter sur WhatsApp">
+                <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                <span>WhatsApp</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/" class="social-item social-item--facebook" target="_blank" rel="noopener noreferrer" aria-label="Profil Facebook">
+                <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                <span>Facebook</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.tiktok.com/" class="social-item social-item--tiktok" target="_blank" rel="noopener noreferrer" aria-label="Profil TikTok">
+                <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+                <span>TikTok</span>
+</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Séparateur -->
+        <div class="contact-divider" aria-hidden="true">
+          <span>ou envoyez-moi un message</span>
+        </div>
+
+        <!-- Formulaire de contact -->
+        <div class="form-wrapper">
+          <form class="contact-form" action="/send" method="post" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nom">Nom complet <span class="required" aria-hidden="true">*</span></label>
+                <input
+                  type="text"
+                  id="nom"
+                  name="nom"
+                  placeholder="Marie Martin"
+                  required
+                  autocomplete="name"
+                  aria-required="true"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Adresse e-mail <span class="required" aria-hidden="true">*</span></label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="marie@exemple.com"
+                  required
+                  autocomplete="email"
+                  aria-required="true"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="sujet">Sujet</label>
+              <input
+                type="text"
+                id="sujet"
+                name="sujet"
+                placeholder="Proposition de stage – Été 2025"
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Message <span class="required" aria-hidden="true">*</span></label>
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                placeholder="Bonjour, je souhaite vous contacter au sujet de..."
+                required
+                aria-required="true"
+              ></textarea>
+            </div>
+            <p class="form-note"><span class="required">*</span> Champs obligatoires</p>
+            <button type="submit" class="btn btn--primary btn--full">
+              Envoyer le message
+              <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; 2026 ADJAKIDJE Janice — Tous droits réservés.</p>
+      <a href="#accueil" class="footer__back-top" aria-label="Retour en haut de page">
+        <i class="fa-solid fa-chevron-up" aria-hidden="true"></i>
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    /* ---- Menu hamburger ---- */
+    const toggle = document.querySelector('.nav__toggle');
+    const navLinks = document.querySelector('.nav__links');
+    toggle.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!open));
+      navLinks.classList.toggle('is-open');
+    });
+    /* Fermer le menu au clic sur un lien */
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    /* ---- Header sticky shadow ---- */
+    window.addEventListener('scroll', () => {
+      document.querySelector('.header').classList.toggle('is-scrolled', window.scrollY > 20);
+    });
+
+    /* ---- Scroll reveal léger ---- */
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('revealed'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.skill-card, .project-card, .social-item, .form-wrapper').forEach(el => {
+      el.classList.add('reveal');
+      observer.observe(el);
+    });
+
+    /* ---- Validation formulaire simple ---- */
+    document.querySelector('.contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const btn = this.querySelector('button[type="submit"]');
+      btn.textContent = '✓ Message envoyé !';
+      btn.disabled = true;
+      btn.style.background = 'var(--clr-success)';
+      setTimeout(() => {
+        btn.innerHTML = 'Envoyer le message <i class="fa-solid fa-paper-plane"></i>';
+        btn.disabled = false;
+        btn.style.background = '';
+        this.reset();
+      }, 3000);
+    });
+  </script>
+</body>
+</html>
